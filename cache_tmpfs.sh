@@ -9,8 +9,8 @@
 # * E-mail   : cine0831@gmail.com
 #**/
 #
-# set -e
-# set -x
+#set -e
+#set -x
 
 switch_conf="/usr/mgmt/cache_tmpfs/cache_tmpfs.conf"
 
