@@ -1,4 +1,6 @@
 #!/bin/bash
+# -*-Shell-script-*-
+#
 #/**
 # * Title    : tmpfs for DB cache remove
 # * Auther   : Alex, Lee
@@ -6,6 +8,9 @@
 # * Modified : 
 # * E-mail   : cine0831@gmail.com
 #**/
+#
+# set -e
+# set -x
 
 switch_conf="/usr/mgmt/cache_tmpfs/cache_tmpfs.conf"
 
