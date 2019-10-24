@@ -12,7 +12,7 @@
 #set -e
 #set -x
 
-switch_conf="/usr/mgmt/cache_tmpfs/cache_tmpfs.conf"
+switch_conf="/usr/local/cache_tmpfs/cache_tmpfs.conf"
 
 if [ -f ${switch_conf} ]
 then
@@ -38,7 +38,7 @@ function msg {
 
 function mount_status {
     local i="$1"
-    local mnt_status=$(mount -v | grep '\/home\/temp\/12r\/cache_tmpfs' | awk '{print $3}' | sort -u)
+    local mnt_status=$(mount -v | grep '\/cache_tmpfs' | awk '{print $3}' | sort -u)
     if [[ "${cache_tmpfs}" == "${mnt_status}" ]]
     then
         i="${i}1"
